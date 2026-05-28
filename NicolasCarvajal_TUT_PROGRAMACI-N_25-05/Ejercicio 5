@@ -1,0 +1,23 @@
+Proceso conversion_moneda
+	Definir pesos, cotizacionDolar, cotizacionEuro Como Real
+	Definir dolares, euros Como Real
+	
+	Escribir "Ingrese el monto en pesos:"
+	Leer pesos
+	Escribir "Ingrese la cotizacion del Dolar:"
+	Leer cotizacionDolar
+	Escribir "Ingrese la cotizacion del Euro:"
+	Leer cotizacionEuro
+	
+	dolares <- pesos / cotizacionDolar
+	euros <- pesos / cotizacionEuro
+	
+	Escribir "================================"
+	Escribir "  CONVERSION DE MONEDA"
+	Escribir "================================"
+	Escribir "Pesos ingresados: $" pesos
+	Escribir "Dolares: U$D " dolares
+	Escribir "Euros:   EUR " euros
+	Escribir "================================"
+	
+FinProceso
