@@ -1,0 +1,21 @@
+Proceso registro_usuario
+	Definir usuario, clave Como Caracter
+	
+	Repetir
+		Escribir "Ingrese un nombre de usuario:"
+		Leer usuario
+		Escribir "Ingrese una contrasena:"
+		Leer clave
+		
+		Si Longitud(usuario) < 4 Entonces
+			Escribir "Error: el nombre de usuario debe tener al menos 4 caracteres"
+		FinSi
+		Si Longitud(clave) <> 6 Entonces
+			Escribir "Error: la contrasena debe tener exactamente 6 caracteres"
+		FinSi
+		
+	Hasta Que Longitud(usuario) >= 4 Y Longitud(clave) = 6
+	
+	Escribir "Usuario registrado correctamente"
+	
+FinProceso

@@ -1,0 +1,22 @@
+Proceso traductor_calificaciones
+	Definir nota Como Caracter
+	
+	Escribir "Ingrese la nota del alumno (A, B, C, D, F):"
+	Leer nota
+	
+	Segun nota Hacer
+		"A", "a":
+			Escribir "Excelente, rendimiento sobresaliente"
+		"B", "b":
+			Escribir "Muy bien, buen rendimiento"
+		"C", "c":
+			Escribir "Regular, rendimiento aceptable"
+		"D", "d":
+			Escribir "Insuficiente, necesita mejorar"
+		"F", "f":
+			Escribir "Reprobado, no alcanzo los requisitos minimos"
+		De Otro Modo:
+			Escribir "Nota no reconocida, ingrese A, B, C, D o F"
+	FinSegun
+	
+FinProceso
